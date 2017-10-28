@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+
+	var result = function(mid,end){
+        var result = ""
+        for (var i = 0; i < mid; ++i) {
+            result += "*";
+        }
+
+        for (var i = 0; i < 10-mid; ++i) {
+            result += "_";
+        }
+        result += " + ";
+
+        for (var i = 0; i < end; ++i) {
+            result += "*";
+        }
+
+        for (var i = 0; i < 10-end; ++i) {
+            result += "_";
+        }
+
+        result += " = ";
+
+        for (var i = 0; i < mid+end; ++i) {
+            result += "*";
+        }
+
+        for (var i = 0; i < 20-(mid+end); ++i) {
+            result += "_";
+        }
+        return result;
+      }
+        console.log("A : " + result(10,8));
+	console.log("B : " + result(1,2));
+	console.log("C : " + result(9,5));
+
+
+    </script>
+</head>
+<body>
+</body>
+</html>
